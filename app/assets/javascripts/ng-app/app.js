@@ -5,7 +5,7 @@ angular
 		'ui.router',
 		'templates'
 	])
-	.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+	.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
 		/**
 		 * Route and States
@@ -43,6 +43,6 @@ angular
 		$urlRouterProvider.otherwise('/');
 
 		// enable HTML5 mode for SEO
-		// $locationProvider.html5Mode(true);
+		$locationProvider.html5Mode(true);
 
-	});
+	}]);
