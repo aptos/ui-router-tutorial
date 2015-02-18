@@ -43,6 +43,6 @@ angular
 		$urlRouterProvider.otherwise('/');
 
 		// enable HTML5 mode for SEO
-		$locationProvider.html5Mode(true);
+		// $locationProvider.html5Mode(true);
 
 	});

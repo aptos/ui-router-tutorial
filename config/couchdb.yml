@@ -1,0 +1,30 @@
+development: &development
+  protocol: 'http'
+  host: localhost
+  port: 5984
+  prefix: ui-rtr-tut
+  suffix: development
+  username: admin
+  password: admin
+
+test:
+  <<: *development
+  suffix: test
+
+production:
+  protocol: 'https'
+  host: taskit.cloudant.com
+  port: 443
+  prefix: ui-rtr-tut
+  suffix: production
+  username: taskit
+  password: <%= ENV['COUCH_PASSWORD'] %>
+
+staging:
+  protocol: 'https'
+  host: taskit.cloudant.com
+  port: 443
+  prefix: ui-rtr-tut
+  suffix: staging
+  username: taskit
+  password: <%= ENV['COUCH_PASSWORD'] %>
