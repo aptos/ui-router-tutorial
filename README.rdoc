@@ -4,8 +4,6 @@ Forked from original tutorial, using this boilerplate to test ui-router in produ
 
 Changed to couchdb, then removed HTML5 mode and added local assets so that I can test with
 
-```
-RAILS_ENV=production foreman start
-```
+  RAILS_ENV=production foreman start
 
 Sadly, this is not rendering templates.
